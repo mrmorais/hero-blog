@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-09-06T02:39:14.854Z</updated>
+  <updated>2016-09-06T02:53:38.934Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -19,36 +19,34 @@
     <title>Criando um blog com Hexo</title>
     <link href="http://yoursite.com/2016/09/05/criando-blog-com-hexo/"/>
     <id>http://yoursite.com/2016/09/05/criando-blog-com-hexo/</id>
-    <published>2016-09-06T02:39:14.854Z</published>
-    <updated>2016-09-06T02:39:14.854Z</updated>
+    <published>2016-09-06T02:53:38.934Z</published>
+    <updated>2016-09-06T02:53:38.934Z</updated>
     
-    <content type="html"><![CDATA[<p>Estava buscando algo de interessante para escrever e dar o<br>primeiro passo com o meu novo blog, então pensei: por quê não<br>falar sobre como esse blog é feito e como fazer um igual?</p>
-<p>Eu já utilizei outras plataformas de blogging anteriormente<br>mas não deu muito certo. A última, creio que é bastante<br>conhecida: <strong>Ghost</strong>. É bem legal, leve e tudo mais, eu até<br>recomendo para quem desejar criar um blog simplista assim.</p>
-<p>O problema que acabei tendo com o Ghost não foi o Ghost em si,<br>mas sim onde eu estava rodando o Ghost. Eu instalei no meu<br>servidor o gerenciador de Container Docker, e coloquei um<br>container de uma imagem do Ghost. Mas acontece que o container<br>caia bastante, o tempo todo, e eu não sabia o motivo. Quando<br>ia olhar o blog.. estava fora do ar.</p>
+    <content type="html"><![CDATA[<p>Estava buscando algo de interessante para escrever e dar o primeiro passo com o meu novo blog, então pensei: por que não falar sobre como esse blog é feito e como fazer um igual?</p>
+<p>Eu já utilizei outras plataformas de blogging anteriormente mas não deu muito certo. A última, creio que é bastante conhecida: <strong>Ghost</strong>. É bem legal, leve e tudo mais, eu até recomendo para quem desejar criar um blog simplista assim.</p>
+<p>O problema que acabei tendo com o Ghost não foi o Ghost em si, mas sim onde eu estava rodando o Ghost. Eu instalei no meu servidor o gerenciador de Container Docker, e coloquei um container de uma imagem do Ghost. Mas acontece que o container caia bastante, o tempo todo, e eu não sabia o motivo. Quando ia olhar o blog.. estava fora do ar.</p>
 <p><img src="http://i.giphy.com/5saWnCIJL7nmU.gif" alt=""></p>
-<p>Assim não dá. né? Então eu cancelei tudo o que tinha no servidor<br>e que estava em containers: meu OwnCloud, meu blog e alguns<br>projetos que estavam hospedados, limpei tudo (aproveitei e<br>dei o fora do CloudFlare. Assunto para outro post).</p>
-<p>“Decepcionado” com o Ghost comecei a buscar uma nova plataforma<br>que fosse open e simplista. Foi então que encontrei o <a href="http://hexo.io" target="_blank" rel="external"><strong>Hexo</strong></a>.<br>Esta plataforma me chamou muito atenção por um simples fato:</p>
+<p>Assim não dá. né? Então eu cancelei tudo o que tinha no servidor e que estava em containers: meu OwnCloud, meu blog e alguns projetos que estavam hospedados, limpei tudo (aproveitei e dei o fora do CloudFlare. Assunto para outro post).</p>
+<p>“Decepcionado” com o Ghost comecei a buscar uma nova plataforma que fosse open e simplista. Foi então que encontrei o <a href="http://hexo.io" target="_blank" rel="external"><strong>Hexo</strong></a>. Esta plataforma me chamou muito atenção por um simples fato:</p>
 <blockquote>
 <p>Ela gera os arquivos em HTML</p>
 </blockquote>
-<p>E isso é incrível. Já que o blog é “read-only mode”, digamos assim,<br>nada mais justo do que gerar arquivos estáticos e entregá-los pelo<br>bom e velho Nginx.</p>
-<p>Além disso é extremamente seguro. Não existe uma página de “administração<br>do sistema”, por quê não precisa disso! A única forma de alguém alterar<br>conteúdo do blog é se invadir o meu servidor, ou se hackear meu GitHub.</p>
+<p>E isso é incrível. Já que o blog é “read-only mode”, digamos assim, nada mais justo do que gerar arquivos estáticos e entregá-los pelo bom e velho Nginx.</p>
+<p>Além disso é extremamente seguro. Não existe uma página de “administração do sistema”, por quê não precisa disso! A única forma de alguém alterar conteúdo do blog é se invadir o meu servidor, ou se hackear meu GitHub.</p>
 <p>Enfim, como funciona?</p>
 <ol>
 <li>Eu escrevo meu artigo em .md (Markdown) e coloco na pasta de artigos.</li>
-</ol>
-<ul>
 <li>Dou o comando para o Hexo gerar a página (html) do meu artigo.</li>
 <li>Mando o Hexo fazer deploy das alterações pro meu GitHub.</li>
 <li>Vou no meu servidor e faço um ‘git pull’ do diretório do meu blog.</li>
-</ul>
-<p>E é isso, simples assim. Eu gostei bastante da sacada genial que o pessoal do<br>Hexo teve. Além disso os temas são excelentes e facilmente manipuláveis.</p>
+</ol>
+<p>E é isso, simples assim. Eu gostei bastante da sacada genial que o pessoal do Hexo teve. Além disso os temas são excelentes e facilmente manipuláveis.</p>
 <p>Se quiser criar um blog simplista, vá com Hexo.</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;Estava buscando algo de interessante para escrever e dar o&lt;br&gt;primeiro passo com o meu novo blog, então pensei: por quê não&lt;br&gt;falar sobr
+      &lt;p&gt;Estava buscando algo de interessante para escrever e dar o primeiro passo com o meu novo blog, então pensei: por que não falar sobre como
     
     </summary>
     
