@@ -1,0 +1,31 @@
+<!DOCTYPE html><html lang="pt-br"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Criando um blog com Hexo · Maradona Morais</title><meta name="description" content="Criando um blog com Hexo - Maradona Morais"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="http://yoursite.com/atom.xml" title="Maradona Morais"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARQUIVO</a></li><li class="nav-list-item"><a href="https://fb.me/maradona.morais.42" target="_blank" class="nav-list-link">FACEBOOK</a></li><li class="nav-list-item"><a href="https://github.com/mrmorais" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">Criando um blog com Hexo</h1><div class="post-info">5 de Set de 2016</div><div class="post-content"><p>Estava buscando algo de interessante para escrever e dar o<br>primeiro passo com o meu novo blog, então pensei: por quê não<br>falar sobre como esse blog é feito e como fazer um igual?</p>
+<p>Eu já utilizei outras plataformas de blogging anteriormente<br>mas não deu muito certo. A última, creio que é bastante<br>conhecida: <strong>Ghost</strong>. É bem legal, leve e tudo mais, eu até<br>recomendo para quem desejar criar um blog simplista assim.</p>
+<p>O problema que acabei tendo com o Ghost não foi o Ghost em si,<br>mas sim onde eu estava rodando o Ghost. Eu instalei no meu<br>servidor o gerenciador de Container Docker, e coloquei um<br>container de uma imagem do Ghost. Mas acontece que o container<br>caia bastante, o tempo todo, e eu não sabia o motivo. Quando<br>ia olhar o blog.. estava fora do ar.</p>
+<p><img src="http://i.giphy.com/5saWnCIJL7nmU.gif" alt=""></p>
+<p>Assim não dá. né? Então eu cancelei tudo o que tinha no servidor<br>e que estava em containers: meu OwnCloud, meu blog e alguns<br>projetos que estavam hospedados, limpei tudo (aproveitei e<br>dei o fora do CloudFlare. Assunto para outro post).</p>
+<p>“Decepcionado” com o Ghost comecei a buscar uma nova plataforma<br>que fosse open e simplista. Foi então que encontrei o <a href="http://hexo.io" target="_blank" rel="external"><strong>Hexo</strong></a>.<br>Esta plataforma me chamou muito atenção por um simples fato:</p>
+<blockquote>
+<p>Ela gera os arquivos em HTML</p>
+</blockquote>
+<p>E isso é incrível. Já que o blog é “read-only mode”, digamos assim,<br>nada mais justo do que gerar arquivos estáticos e entregá-los pelo<br>bom e velho Nginx.</p>
+<p>Além disso é extremamente seguro. Não existe uma página de “administração<br>do sistema”, por quê não precisa disso! A única forma de alguém alterar<br>conteúdo do blog é se invadir o meu servidor, ou se hackear meu GitHub.</p>
+<p>Enfim, como funciona?</p>
+<ol>
+<li>Eu escrevo meu artigo em .md (Markdown) e coloco na pasta de artigos.</li>
+</ol>
+<ul>
+<li>Dou o comando para o Hexo gerar a página (html) do meu artigo.</li>
+<li>Mando o Hexo fazer deploy das alterações pro meu GitHub.</li>
+<li>Vou no meu servidor e faço um ‘git pull’ do diretório do meu blog.</li>
+</ul>
+<p>E é isso, simples assim. Eu gostei bastante da sacada genial que o pessoal do<br>Hexo teve. Além disso os temas são excelentes e facilmente manipuláveis.</p>
+<p>Se quiser criar um blog simplista, vá com Hexo.</p>
+</div></article></div></section><footer><div class="paginator"><a href="/2016/09/05/hello-world/" class="next">PRÓXIMA</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'maradona-morais';
+var disqus_identifier = '2016/09/05/criando-blog-com-hexo/';
+var disqus_title = 'Criando um blog com Hexo';
+var disqus_url = 'http://yoursite.com/2016/09/05/criando-blog-com-hexo/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//maradona-morais.disqus.com/count.js" async></script><div class="copyright"><p>© 2016 <a href="http://yoursite.com">Maradona Morais</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script></body></html>
